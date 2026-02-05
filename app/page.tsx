@@ -53,24 +53,24 @@ const Home = () => {
       />
 
       {/* About Section */}
-      <section className="section-padding bg-secondary">
-        <div className="container-narrow">
+      <section className="px-6 py-20 md:px-12 lg:px-24 lg:py-28 bg-secondary">
+        <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <span className="text-small uppercase tracking-widest text-accent">Our Story</span>
-              <h2 className="heading-lg text-foreground">
+              <span className="text-sm text-muted-foreground uppercase tracking-widest text-accent">Our Story</span>
+              <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight text-foreground">
                 A Legacy of Excellence in Education
               </h2>
-              <p className="text-body">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Our Alpha Upsilon Chapter was founded on December 8, 1945, in Pasadena, California,
                 by Grace Post. For nearly eight decades, our members have worked tirelessly in the
                 surrounding communities of La Cañada, Arcadia, Los Angeles, Alhambra, Pasadena, and Glendale.
               </p>
-              <p className="text-body">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 As part of the Delta Kappa Gamma Society International, we are committed to promoting
                 professional and personal growth of women educators and excellence in education.
               </p>
-              <Link href="/contact" className="btn-secondary">
+              <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-accent bg-transparent px-8 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-white">
                 Learn More About Us
               </Link>
             </div>
@@ -92,25 +92,25 @@ const Home = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="section-padding">
-        <div className="container-narrow">
+      <section className="px-6 py-20 md:px-12 lg:px-24 lg:py-28">
+        <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card-elegant border border-border">
-              <span className="text-small uppercase tracking-widest text-accent mb-4 block">Vision</span>
-              <h3 className="heading-md text-foreground mb-4">
+            <div className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border">
+              <span className="text-sm text-muted-foreground uppercase tracking-widest text-accent mb-4 block">Vision</span>
+              <h3 className="text-2xl md:text-3xl font-serif font-medium text-foreground mb-4">
                 Leading Women Educators
               </h3>
-              <p className="text-body">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Impacting Education Worldwide — empowering the next generation of learners
                 through dedicated mentorship and innovative teaching practices.
               </p>
             </div>
-            <div className="card-elegant border border-border">
-              <span className="text-small uppercase tracking-widest text-accent mb-4 block">Mission</span>
-              <h3 className="heading-md text-foreground mb-4">
+            <div className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border">
+              <span className="text-sm text-muted-foreground uppercase tracking-widest text-accent mb-4 block">Mission</span>
+              <h3 className="text-2xl md:text-3xl font-serif font-medium text-foreground mb-4">
                 Professional Growth
               </h3>
-              <p className="text-body">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 The Delta Kappa Gamma Society International promotes professional and personal
                 growth of women educators and excellence in education.
               </p>
@@ -120,14 +120,14 @@ const Home = () => {
       </section>
 
       {/* Opportunities Section */}
-      <section className="section-padding bg-secondary">
-        <div className="container-narrow">
+      <section className="px-6 py-20 md:px-12 lg:px-24 lg:py-28 bg-secondary">
+        <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <span className="text-small uppercase tracking-widest text-accent">What We Offer</span>
-            <h2 className="heading-lg text-foreground mt-4">
+            <span className="text-sm text-muted-foreground uppercase tracking-widest text-accent">What We Offer</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight text-foreground mt-4">
               Membership Opportunities
             </h2>
-            <p className="text-body max-w-2xl mx-auto mt-4">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mt-4">
               Discover the many ways our chapter supports women educators in their
               professional journey and personal development.
             </p>
@@ -137,14 +137,14 @@ const Home = () => {
             {opportunities.map((opportunity, index) => (
               <div
                 key={index}
-                className="card-elegant border border-border flex gap-6"
+                className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border flex gap-6"
               >
                 <div className="shrink-0 w-16 h-16 rounded-full bg-rose-light flex items-center justify-center text-accent">
                   {opportunity.icon}
                 </div>
                 <div>
-                  <h3 className="heading-sm text-foreground mb-2">{opportunity.title}</h3>
-                  <p className="text-body text-sm">{opportunity.description}</p>
+                  <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-2">{opportunity.title}</h3>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-sm">{opportunity.description}</p>
                 </div>
               </div>
             ))}
@@ -153,21 +153,21 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding">
-        <div className="container-narrow text-center">
-          <h2 className="heading-lg text-foreground mb-6">
+      <section className="px-6 py-20 md:px-12 lg:px-24 lg:py-28">
+        <div className="mx-auto max-w-6xl text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight text-foreground mb-6">
             Join Our Community
           </h2>
-          <p className="text-body max-w-2xl mx-auto mb-8">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
             Whether you're an experienced educator or just starting your career,
             Alpha Upsilon welcomes you. Connect with like-minded professionals
             who share your passion for education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/programs" className="btn-primary">
+            <Link href="/programs" className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:shadow-lg">
               View Our Programs
             </Link>
-            <Link href="/contact" className="btn-secondary">
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-accent bg-transparent px-8 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-white">
               Get In Touch
             </Link>
           </div>

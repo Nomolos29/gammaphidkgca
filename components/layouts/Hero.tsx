@@ -27,7 +27,7 @@ const Hero = ({ title, subtitle, showRose = true, backgroundImage = true }: Hero
       )}
 
       {/* Content */}
-      <div className="relative z-10 container-narrow px-6 md:px-12 text-center py-32">
+      <div className="relative z-10 mx-auto max-w-6xl px-6 md:px-12 text-center py-32">
         {showRose && (
           <Image
             src={roseImage}
@@ -38,12 +38,12 @@ const Hero = ({ title, subtitle, showRose = true, backgroundImage = true }: Hero
           />
         )}
 
-        <h1 className="heading-xl text-foreground mb-6 fade-in stagger-1">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight tracking-tight text-foreground mb-6 fade-in stagger-1">
           {title}
         </h1>
 
         {subtitle && (
-          <p className="text-body max-w-2xl mx-auto fade-in stagger-2">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto fade-in stagger-2">
             {subtitle}
           </p>
         )}

@@ -70,6 +70,10 @@
   --color-cream: var(--cream);
   --color-charcoal: var(--charcoal);
 
+  --color-border: var(--border)
+  --color-input: var(--input)
+  --color-ring: var(--ring)
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -81,6 +85,14 @@
   }
 } */
 
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -88,3 +100,104 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+}
+/*
+@layer components {
+  .nav-link {
+    @apply relative text-foreground/80 transition-colors duration-300 hover:text-accent;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 h-[1px] w-0 bg-accent transition-all duration-300 content-[''];
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .mx-auto max-w-6xl {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 {
+    @apply bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:shadow-lg {
+    @apply inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:shadow-lg;
+  }
+
+  .inline-flex items-center justify-center rounded-full border border-accent bg-transparent px-8 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-white {
+    @apply inline-flex items-center justify-center rounded-full border border-accent bg-transparent px-8 py-3 text-sm font-medium text-accent transition-all duration-300 hover:bg-accent hover:text-white;
+  }
+
+  .w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300 {
+    @apply w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300;
+  }
+
+  .text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight tracking-tight {
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight tracking-tight;
+  }
+
+  .text-3xl md:text-4xl font-serif font-medium leading-tight {
+    @apply text-3xl md:text-4xl font-serif font-medium leading-tight;
+  }
+
+  .text-2xl md:text-3xl font-serif font-medium {
+    @apply text-2xl md:text-3xl font-serif font-medium;
+  }
+
+  .text-xl md:text-2xl font-serif font-medium {
+    @apply text-xl md:text-2xl font-serif font-medium;
+  }
+
+  .text-base md:text-lg text-muted-foreground leading-relaxed {
+    @apply text-base md:text-lg text-muted-foreground leading-relaxed;
+  }
+
+  .text-sm text-muted-foreground {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .fade-in {
+    animation: fade-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+ */
+
+.fade-in {
+animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }

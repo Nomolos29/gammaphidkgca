@@ -16,11 +16,11 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
-      <nav className="container-narrow flex items-center justify-between px-6 py-4 md:px-12">
+      <nav className="mx-auto max-w-6xl flex items-center justify-between px-6 py-4 md:px-12">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <span className="heading-sm text-accent">Alpha Upsilon</span>
-          <span className="hidden md:inline text-small">DKG Chapter</span>
+          <span className="text-xl md:text-2xl font-serif font-medium text-accent">Alpha Upsilon</span>
+          <span className="hidden md:inline text-sm text-muted-foreground">DKG Chapter</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -29,7 +29,7 @@ const Header = () => {
             <Link
               key={link.path}
               href={link.path}
-              className={`nav-link text-sm font-medium tracking-wide uppercase ${
+              className={`relative text-foreground/80 transition-colors duration-300 hover:text-accent text-sm after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 after:content-[''] font-medium tracking-wide uppercase after:hover:w-full ${
                 pathname === link.path ? "text-accent" : ""
               }`}
             >
@@ -68,7 +68,7 @@ const Header = () => {
           isOpen ? "max-h-64" : "max-h-0"
         }`}
       >
-        <div className="container-narrow px-6 py-4 flex flex-col gap-4">
+        <div className="mx-auto max-w-6xl px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.path}

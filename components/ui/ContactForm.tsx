@@ -45,8 +45,8 @@ const ContactForm = () => {
             />
           </svg>
         </div>
-        <h3 className="heading-md text-foreground mb-2">Thank You!</h3>
-        <p className="text-body">We'll be in touch with you soon.</p>
+        <h3 className="text-2xl md:text-3xl font-serif font-medium text-foreground mb-2">Thank You!</h3>
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">We'll be in touch with you soon.</p>
       </div>
     );
   }
@@ -65,7 +65,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="input-elegant"
+            className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300"
             placeholder="Jane Doe"
           />
         </div>
@@ -80,7 +80,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="input-elegant"
+            className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300"
             placeholder="jane@example.com"
           />
         </div>
@@ -97,7 +97,7 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="input-elegant"
+          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300"
           placeholder="How can we help?"
         />
       </div>
@@ -113,12 +113,12 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           rows={5}
-          className="input-elegant resize-none"
+          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-all duration-300 resize-none"
           placeholder="Tell us more about your inquiry..."
         />
       </div>
 
-      <button type="submit" className="btn-primary w-full md:w-auto">
+      <button type="submit" className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-sm font-medium text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:shadow-lg w-full md:w-auto">
         Send Message
       </button>
     </form>

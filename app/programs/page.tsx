@@ -86,12 +86,12 @@ const Programs = () => {
 
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 md:px-12 bg-secondary">
-        <div className="container-narrow text-center">
-          <span className="text-small uppercase tracking-widest text-accent">2025-2026 Season</span>
-          <h1 className="heading-xl text-foreground mt-4 mb-6">
+        <div className="mx-auto max-w-6xl text-center">
+          <span className="text-sm text-muted-foreground uppercase tracking-widest text-accent">2025-2026 Season</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight tracking-tight text-foreground mt-4 mb-6">
             Program Calendar
           </h1>
-          <p className="text-body max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Join us for an enriching year of professional development, community service,
             and fellowship. All members and guests are welcome.
           </p>
@@ -99,12 +99,12 @@ const Programs = () => {
       </section>
 
       {/* Events Grid */}
-      <section className="section-padding">
-        <div className="container-narrow">
+      <section className="px-6 py-20 md:px-12 lg:px-24 lg:py-28">
+        <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main Events */}
             <div className="lg:col-span-2 space-y-6">
-              <h2 className="heading-md text-foreground mb-8">Upcoming Events</h2>
+              <h2 className="text-2xl md:text-3xl font-serif font-medium text-foreground mb-8">Upcoming Events</h2>
               {events.map((event, index) => (
                 <EventCard key={index} {...event} />
               ))}
@@ -113,22 +113,22 @@ const Programs = () => {
             {/* Sidebar - Special Events */}
             <aside className="lg:col-span-1">
               <div className="sticky top-24">
-                <div className="card-elegant border border-border">
-                  <h3 className="heading-sm text-foreground mb-6">Special Events</h3>
+                <div className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border">
+                  <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-6">Special Events</h3>
                   <div className="space-y-6">
                     {specialEvents.map((event, index) => (
                       <div key={index} className="pb-6 border-b border-border last:border-0 last:pb-0">
-                        <p className="text-small text-accent font-medium">{event.date}</p>
+                        <p className="text-sm text-muted-foreground text-accent font-medium">{event.date}</p>
                         <p className="font-serif text-lg text-foreground mt-1">{event.title}</p>
-                        <p className="text-small">{event.location}</p>
+                        <p className="text-sm text-muted-foreground">{event.location}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="card-elegant border border-border mt-6 bg-rose-light">
-                  <h3 className="heading-sm text-foreground mb-4">Meeting Information</h3>
-                  <p className="text-small">
+                <div className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-border mt-6 bg-rose-light">
+                  <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground mb-4">Meeting Information</h3>
+                  <p className="text-sm text-muted-foreground">
                     Most meetings are held at the Assistance League of Pasadena.
                     Contact us for specific times and additional details.
                   </p>

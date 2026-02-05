@@ -8,7 +8,7 @@ interface EventCardProps {
 
 const EventCard = ({ date, day, title, location, description }: EventCardProps) => {
   return (
-    <article className="card-elegant flex flex-col md:flex-row gap-6 group">
+    <article className="bg-card rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col md:flex-row gap-6 group">
       {/* Date Block */}
       <div className="shrink-0 flex flex-col items-center justify-center w-20 h-20 bg-rose-light rounded-lg">
         <span className="text-2xl font-serif font-medium text-accent">{date}</span>
@@ -17,10 +17,10 @@ const EventCard = ({ date, day, title, location, description }: EventCardProps) 
 
       {/* Content */}
       <div className="flex-1 space-y-2">
-        <h3 className="heading-sm text-foreground group-hover:text-accent transition-colors">
+        <h3 className="text-xl md:text-2xl font-serif font-medium text-foreground group-hover:text-accent transition-colors">
           {title}
         </h3>
-        <p className="text-small flex items-center gap-2">
+        <p className="text-sm text-muted-foreground flex items-center gap-2">
           <svg
             className="w-4 h-4 text-accent"
             fill="none"
@@ -43,7 +43,7 @@ const EventCard = ({ date, day, title, location, description }: EventCardProps) 
           {location}
         </p>
         {description && (
-          <p className="text-body text-sm">{description}</p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-sm">{description}</p>
         )}
       </div>
     </article>
