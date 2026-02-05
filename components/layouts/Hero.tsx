@@ -1,5 +1,5 @@
-import heroImage from "@/assets/hero-educators.jpg";
-import roseImage from "@/assets/rose-watercolor.png";
+import heroImage from "@/public/hero-educators.jpg";
+import roseImage from "@/public/rose-watercolor.png";
 import Image from "next/image";
 
 interface HeroProps {
