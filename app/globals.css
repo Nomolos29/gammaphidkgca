@@ -1,47 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 0 0% 10%;
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(0 0% 10%);
 
-  --card: 40 20% 98%;
-  --card-foreground: 0 0% 10%;
+  --card: hsl(40 20% 98%);
+  --card-foreground: hsl(0 0% 10%);
 
-  --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 10%;
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(0 0% 10%);
 
-  --primary: 0 20% 73%;
-  --primary-foreground: 0 0% 100%;
+  --primary: hsl(0 20% 73%);
+  --primary-foreground: hsl(0 0% 100%);
 
-  --secondary: 40 33% 97%;
-  --secondary-foreground: 0 0% 10%;
+  --secondary: hsl(40 33% 97%);
+  --secondary-foreground: hsl(0 0% 10%);
 
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 45%;
+  --muted: hsl(0 0% 96%);
+  --muted-foreground: hsl(0 0% 45%);
 
-  --accent: 345 30% 42%;
-  --accent-foreground: 0 0% 100%;
+  --accent: hsl(345 30% 42%);
+  --accent-foreground: hsl(0 0% 100%);
 
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
 
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 20% 73%;
+  --border: hsl(0 0% 90%);
+  --input: hsl(0 0% 90%);
+  --ring: hsl(0 20% 73%);
 
   --radius: 0.5rem;
 
   /* Custom tokens */
-  --rose-light: 0 30% 95%;
-  --rose-medium: 0 20% 73%;
-  --rose-dark: 345 30% 42%;
-  --cream: 40 33% 97%;
-  --charcoal: 0 0% 10%;
+  --rose-light: hsl(0 30% 95%);
+  --rose-medium: hsl(0 20% 73%);
+  --rose-dark: hsl(345 30% 42%);
+  --cream: hsl(40 33% 97%);
+  --charcoal: hsl(0 0% 10%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-rose-light: var(--rose-light);
+  --color-rose-medium: var(--rose-medium);
+  --color-rose-dark: var(--rose-dark);
+  --color-cream: var(--cream);
+  --color-charcoal: var(--charcoal);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
